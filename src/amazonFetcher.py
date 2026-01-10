@@ -85,6 +85,6 @@ class AmazonFetcher:
         asin = self._extract_asin(soup)
         name = self._extract_name(soup)
         price = self._extract_price(soup)
-        currency = self._extract_currency(sopu)
+        currency = self._extract_currency(soup)
 
         return AmazonProduct(asin, name, price, currency, url)
