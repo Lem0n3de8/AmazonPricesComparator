@@ -110,5 +110,5 @@ Anyone is welcome to contribute to the project!
 
 Below are displayed all contribuitions:
 
-|Feature name|Feature description|Author|
-|------------|-------------------|------|
+|Contribuition name|Contribuition description|Author|
+|------------------|-------------------------|------|
