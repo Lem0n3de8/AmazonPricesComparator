@@ -19,6 +19,10 @@ class DataStorage:
             self.conn = None
 
     def add_product(self, product: AmazonProduct):
+        """Insert a new entry in the db.
+        
+        Works both to add a new item or simply insert a price into history
+        """
         self._connect()
         cursor = self.conn.cursor()
 
@@ -54,3 +58,14 @@ class DataStorage:
         """,(asin,))
 
         self.conn.commit()
+
+    def delete_by_id(self, id:int):
+        """Delete and item and its entire price history using its id"""
+
+        self._connect()
+        cursor = self.conn.cursor()
+
+        cursor.execute("""
+            DELETE FROM items
+            WHERE id = ?
+        """,(id,))
