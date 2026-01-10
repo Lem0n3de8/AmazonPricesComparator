@@ -19,7 +19,7 @@ class FetchFromTxt:
         try:
             with open(self.path, 'r') as file:
                 self.file_content = file.read().splitlines()
-        except FileExistsError:
+        except FileNotFoundError:
             open(self.path, 'x').close()
             self.file_content = []
 
@@ -37,7 +37,7 @@ class FetchFromTxt:
         if not os.path.exists(path):
             raise FileNotFoundError(path)
 
-        self.pah = path
+        self.path = path
         self._read_file() 
     
     def fetch_first_link(self) -> AmazonProduct:
@@ -47,8 +47,8 @@ class FetchFromTxt:
         if not self.file_content:
             raise ValueError("Links file is empty")
         
-        fist_link = self.file_content[0].strip()
-        product_info = self.amazon_fetcher(first_line)
+        first_link = self.file_content[0].strip()
+        product_info = self.amazon_fetcher.fetch_product(fist_link)
         return product_info
     
     def fetch_link_n(self, link_number:int) -> AmazonProduct:
