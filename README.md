@@ -2,15 +2,18 @@
 
 About the project : 
 
-> The goal of the project is to create a small Python application that allows tracking the price evolution for Amazon products.
+> The goal of the project is to create a small local Python application that allows tracking the price evolution for Amazon products.
 > As of now, there are still some uncertainties about how exactly will the frontend part be handled.
 
 Beginner-friendly Project :
 
 > The goal of the project is also to give people a project to work on. You don't need to know everything about Python to start working on this project.
 > If you want to work on a project, your help is more than welcome!
-    
+
+ 
 ---
+
+
 ## Table of Contents
 
 - [About the project](#amazon-prices-comparator)
@@ -19,7 +22,10 @@ Beginner-friendly Project :
 - [How to clone](#how-to-clone-the-repository)
 - [How to contribute](#how-to-contribute)
 - [List of Contribuitions](#list-of-contribuitions)
+
+
 ---
+
 
 ## Roadmap
 
@@ -27,14 +33,19 @@ In this section you'll find the list of all the important features for the proje
 
 |Feature name|Feature description|Status|Author|
 |------------|-------------------|------|------|
-|Amazon Fetcher|Create the main class to fetch product data from Amazon Website|`Complete`|[Lem0n3de8](https://github.com/Lem0n3de8)|
-|Fetch From Txt |Implement utility class to automate the fetching of data for multiple links |`Completed`|[Lem0n3de8](https://github.com/Lem0n3de8)|
+|Amazon Fetcher|Create the main class to fetch product data from Amazon Website|Completed|[Lem0n3de8](https://github.com/Lem0n3de8)|
+|Fetch From Txt |Implement utility class to automate the fetching of data for multiple links |Completed|[Lem0n3de8](https://github.com/Lem0n3de8)|
+|SQL Database|Create a module that will allow to initialize a local sqlite database for prices storage|Not started||
+|Data Storage|New module to store the data retrieved from amazon into the local database|`Not Started|Not started|
+
 
 ---
 
+
 ## How to clone the repository
 
-Note: Python 3.13.11 required
+Note: Python [3.13.11](https://www.python.org/downloads/release/python-31311/) or newer required
+Note: SQLite [3.51.1](https://sqlite.org/releaselog/3_51_1.html) or newer required (use Homebrew on MacOs)
 
 ### 1. Clone
 ``` shell
@@ -61,6 +72,7 @@ source venv/bin/activate
 ```shell
 pip install -r requirements.txt
 ```
+
 
 ---
 
@@ -91,9 +103,10 @@ Anyone is welcome to contribute to the project!
 
 ---
 
+
 ## List of contribuitions
 
 Below are displayed all contribuitions:
 
-|Feature name|Feature description|Status|Author|
-|------------|-------------------|------|------|
+|Feature name|Feature description|Author|
+|------------|-------------------|------|
