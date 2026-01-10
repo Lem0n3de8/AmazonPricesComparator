@@ -21,7 +21,10 @@ CREATE TABLE IF NOT EXISTS price_history (
     price REAL NOT NULL,
     currency TEXT DEFAULT 'EUR',
     checked_at DATETIME NOT NULL,
-    FOREIGN KEY (item_id) REFERENCES items(id)
+    FOREIGN KEY (item_id) 
+        REFERENCES items(id)
+        ON DELETE CASCADE,
+    UNIQUE(item_id, checked_at)
 );
 """
 
@@ -69,7 +72,9 @@ class DatabaseCreate:
                 price REAL NOT NULL,
                 currency TEXT DEFAULT 'EUR',
                 checked_at DATETIME NOT NULL,
-                FOREIGN KEY (item_id) REFERENCES items(id),
+                FOREIGN KEY (item_id) 
+                    REFERENCES items(id)
+                    ON DELETE CASCADE,
                 UNIQUE(item_id, checked_at)
             );
         """)
