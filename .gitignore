@@ -1,2 +1,5 @@
 .vscode
 venv
+database.db
+__pycache__/
+__init__.py
