@@ -1,4 +1,4 @@
-# Amazon Prices Comparator
+# Amazon Price Comparator
 
 About the project : 
 
@@ -16,7 +16,7 @@ Beginner-friendly Project :
 
 ## Table of Contents
 
-- [About the project](#amazon-prices-comparator)
+- [About the project](#amazon-price-comparator)
 - [Table of Contents](#table-of-contents)
 - [Roadmap](#roadmap)
 - [How to clone](#how-to-clone-the-repository)
@@ -50,8 +50,8 @@ Note: SQLite [3.51.1](https://sqlite.org/releaselog/3_51_1.html) or newer requir
 
 ### 1. Clone
 ``` shell
-git clone https://github.com/Lem0n3de8/AmazonPricesComparator
-cd AmazonPricesComparator
+git clone https://github.com/Lem0n3de8/AmazonPriceComparator
+cd AmazonPriceComparator
 ```
 
 ### 2. Create Virtual Environment
