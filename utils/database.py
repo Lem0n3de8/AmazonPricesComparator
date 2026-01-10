@@ -1,7 +1,5 @@
 import sqlite3
 
-from src.amazonFetcher import AmazonProduct
-
 """
 ##### SQL SCHEMA ####
 
