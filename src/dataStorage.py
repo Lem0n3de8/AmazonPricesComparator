@@ -41,3 +41,16 @@ class DataStorage:
         """,(item_id, product.price, product.currency, product.datetime))
 
         self.conn.commit()
+    
+    def delete_by_asin(self, asin:str):
+        """Delete an item and its entire price history"""
+        
+        self._connect()
+        cursor = self.conn.cursor()
+
+        cursor.execute("""
+            DELETE FROM items
+            WHERE amazon_asin = ?
+        """,(asin,))
+
+        self.conn.commit()
