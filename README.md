@@ -35,7 +35,8 @@ In this section you'll find the list of all the important features for the proje
 |------------|-------------------|------|------|
 |Amazon Fetcher|Create the main class to fetch product data from Amazon Website|Completed|[Lem0n3de8](https://github.com/Lem0n3de8)|
 |Fetch From Txt |Implement utility class to automate the fetching of data for multiple links |Completed|[Lem0n3de8](https://github.com/Lem0n3de8)|
-|SQL Database|Create a module that will allow to initialize a local sqlite database for prices storage|Not started||
+|SQL Database|Create a module that will allow to initialize a local sqlite database for prices storage|WIP|[Lem0n3de8](https://github.com/Lem0n3de8)|
+|Testing Units| Create testing units for the existing modules|Not started||
 |Data Storage|New module to store the data retrieved from amazon into the local database|Not Started||
 
 
