@@ -36,7 +36,7 @@ In this section you'll find the list of all the important features for the proje
 |Amazon Fetcher|Create the main class to fetch product data from Amazon Website|Completed|[Lem0n3de8](https://github.com/Lem0n3de8)|
 |Fetch From Txt |Implement utility class to automate the fetching of data for multiple links |Completed|[Lem0n3de8](https://github.com/Lem0n3de8)|
 |SQL Database|Create a module that will allow to initialize a local sqlite database for prices storage|Not started||
-|Data Storage|New module to store the data retrieved from amazon into the local database|`Not Started|Not started|
+|Data Storage|New module to store the data retrieved from amazon into the local database|Not Started||
 
 
 ---
@@ -45,6 +45,7 @@ In this section you'll find the list of all the important features for the proje
 ## How to clone the repository
 
 Note: Python [3.13.11](https://www.python.org/downloads/release/python-31311/) or newer required
+
 Note: SQLite [3.51.1](https://sqlite.org/releaselog/3_51_1.html) or newer required (use Homebrew on MacOs)
 
 ### 1. Clone
