@@ -1,5 +1,6 @@
 import requests
 
+from datetime import datetime
 from bs4 import BeautifulSoup
 
 
@@ -11,6 +12,7 @@ class AmazonProduct:
         self.price = price
         self.currency = currency
         self.url = url
+        self.datetime = datetime.utcnow()
 
 
 class AmazonFetcher:
